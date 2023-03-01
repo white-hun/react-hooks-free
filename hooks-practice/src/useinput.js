@@ -2,17 +2,27 @@ import React, { useState } from "react";
 import styles from "./App.css";
 
 //---useInput--------------------------------------
-
-const useInput = (initialValue) => {
+// validator - 유효성 검증 기능
+const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
   const onChange = (event) => {
-    setValue(event.target.value);
+    const {
+      target: { value },
+    } = event;
+    let willUpdate = true;
+    if (typeof validator === "function") {
+      willUpdate = validator(value);
+    }
+    if (willUpdate) {
+      setValue(value);
+    }
   };
   return { value, onChange };
 };
 
 const App = () => {
-  const name = useInput("Mr.");
+  const maxLen = (value) => !value.includes("@") <= 10;
+  const name = useInput("Mr.", maxLen);
   return (
     <div className={styles.app}>
       <h1>Hello</h1>
