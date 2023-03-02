@@ -7,8 +7,8 @@ import "./index.css";
 // import App from "./useTab";
 // import App from "./useEffect";
 // import App from "./useTitle";
-import App from "./useRef";
-// import App from "./useClick";
+// import App from "./useRef";
+import App from "./useClick";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
