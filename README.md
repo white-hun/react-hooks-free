@@ -1,9 +1,9 @@
 # react-hooks-free
 
-- [ ] useTitle
-- [ ] useInput
-- [ ] usePageLeave
-- [ ] useClick
+- [x] useTitle
+- [x] useInput
+- [x] usePageLeave
+- [x] useClick
 - [ ] useFadeIn
 - [ ] useFullscreen
 - [ ] useHover

@@ -11,3 +11,9 @@ button {
 hr {
   width: 70%;
 }
+input {
+  width: 600px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
