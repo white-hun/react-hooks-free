@@ -4,7 +4,9 @@ import "./index.css";
 // import App from "./App";
 // import AppUgly from "./App";
 // import App from "./useInput";
-import App from "./useTab";
+// import App from "./useTab";
+// import App from "./useEffect";
+import App from "./useTitle";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
