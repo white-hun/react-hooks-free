@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./App.css";
 
-//---useReference-----------------------------------------
+//---useRef-----------------------------------------
 // reference - component의 어떤 부분을 선택할 수 있는 방법
 // document.getElementByID()를 사용한 것과 동일하다
 
